@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+
+    tools:context=".AddStudent">
+
+
+    <EditText
+        android:id="@+id/edtTen"
+        android:layout_width="match_parent"
+
+        android:layout_height="50dp"
+        android:layout_below="@+id/imgHinhDaiDien"
+        android:background="@drawable/edit_text_styles"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edtSdt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edtTen"
+
+        android:background="@drawable/edit_text_styles"
+        android:ems="10"
+        android:hint="SDT"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/etuoi"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edtTen"
+
+        android:background="@drawable/edit_text_styles"
+        android:ems="10"
+        android:hint="Tuoi"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/edtDiemtoan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edtTen"
+
+        android:background="@drawable/edit_text_styles"
+        android:ems="10"
+        android:hint="DiemToan"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/edtDiemvan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edtTen"
+
+        android:background="@drawable/edit_text_styles"
+        android:ems="10"
+        android:hint="DiemVan"
+        android:inputType="phone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnThem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/imgHinhDaiDien"
+            android:layout_alignRight="@+id/imgHinhDaiDien"
+            android:layout_below="@+id/edtSdt"
+            android:layout_weight="1"
+            android:text="Thêm" />
+
+        <Button
+            android:id="@+id/btnHuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/btnChupHinh"
+            android:layout_weight="1"
+            android:text="Hủy" />
+    </LinearLayout>
+</LinearLayout>
